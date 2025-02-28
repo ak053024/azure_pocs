@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Summarizer</title>
+</head>
+<body>
+    <h1>Upload Resume (PDF/DOCX) for AI Summary</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="resume" required>
+        <button type="submit">Upload & Summarize</button>
+    </form>
+
+    {% if summary %}
+        <h2>Summary:</h2>
+        <p>{{ summary }}</p>
+    {% endif %}
+</body>
+</html>
