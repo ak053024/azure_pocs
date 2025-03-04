@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Study Companion</title>
+</head>
+<body>
+    <h2>Upload Notes or Documents</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        
+        <label for="function">Choose Functionality:</label>
+        <select name="function">
+            <option value="ocr">Extract Text (OCR)</option>
+            <option value="summarize">Summarize</option>
+            <option value="translate">Translate</option>
+            <option value="tts">Read Aloud (Text-to-Speech)</option>
+        </select>
+
+        <button type="submit">Process</button>
+    </form>
+</body>
+</html>
